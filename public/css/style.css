@@ -305,10 +305,10 @@ nav {
     opacity: 1;
     transform: translateY(0);
   }
-  /* .pop-out {
+  .pop-out {
     opacity: 1;
     transform: translateY(0);
-  } */
+  }
 }
 
 .homebig {
