@@ -306,8 +306,8 @@ nav {
     transform: translateY(0);
   }
   .pop-out {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1 !important;
+    transform: translateY(0) !important;
   }
 }
 
