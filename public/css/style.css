@@ -268,6 +268,7 @@ nav {
 
   .person img {
     width: 10rem !important;
+    height: 10rem !important;
   }
   .person h2 {
     font-size: 1rem !important;
@@ -275,14 +276,15 @@ nav {
   .person p {
     font-size: 0.8rem !important;
     text-align: center !important;
+    padding: 0.7rem;
   }
   .person h3 {
     text-align: center !important;
     font-size: 1rem !important;
   }
-  .team-cards {
+  /* .team-cards {
     padding-bottom: 0 !important;
-  }
+  } */
   .home-first {
     min-height: 170vh !important;
   }
@@ -306,8 +308,28 @@ nav {
     transform: translateY(0);
   }
   .pop-out {
-    opacity: 1 !important;
     transform: translateY(0) !important;
+  }
+  .stats-banner-big {
+    display: flex;
+    padding: 0 !important;
+    flex-direction: column;
+  }
+  .stats-banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .stats-banner-title {
+    margin-bottom: 4rem;
+  }
+  .banner-div {
+    margin: 0 !important;
+    margin-top: -4rem !important;
+  }
+  .events-cont {
+    flex-wrap: wrap;
+    padding: 0 !important;
+    padding-bottom: 5rem !important;
   }
 }
 
@@ -382,6 +404,20 @@ nav {
   transition: margin-left 1.5s !important ;
   box-shadow: black 1rem 0.5rem 2rem;
 }
+
+.home-first #vid-back {
+  width: 65%;
+
+  opacity: 1;
+  border-radius: 0.8rem;
+  position: absolute;
+  margin-left: 26rem;
+  margin-top: 1rem;
+
+  filter: blur(5rem);
+
+  z-index: -100 !important;
+}
 .pop-out {
   opacity: 0;
   transform: translateY(3rem);
@@ -393,7 +429,7 @@ nav {
   transform: translateY(0);
 }
 .first-image {
-  width: 18rem;
+  width: 20rem;
 
   object-fit: cover;
 
@@ -460,11 +496,19 @@ nav {
   margin-left: 0;
   background-color: rgb(255, 255, 255, 0.1);
 }
-
+.card .row {
+  height: 100% !important;
+}
 .card img {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+}
+.home-second .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .card:hover img {
@@ -498,6 +542,49 @@ nav {
   flex-wrap: wrap;
   justify-content: start;
   align-items: center;
+}
+/* stats banner */
+.stats-banner-big {
+  padding: 2rem;
+  margin: 2rem;
+}
+.stats-banner {
+  display: flex;
+  flex-wrap: nowrap !important;
+  justify-content: center;
+}
+.stats-banner-title {
+  text-align: center;
+  color: white !important;
+  font-weight: 600;
+}
+.banner-div {
+  color: white;
+  width: 25rem;
+  height: 25rem;
+  margin: 1rem;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.banner-div h3 {
+  text-align: center;
+}
+.banner-div img {
+  width: 100%;
+  border-radius: 1rem;
+  opacity: 0.8;
+  z-index: 0;
+  object-fit: cover;
+  position: absolute;
+  z-index: -2;
+  transition: transform 0.3s ease;
+}
+.banner-div:hover {
+  img {
+    transform: scale(1.05);
+  }
 }
 
 /* home fourth */
@@ -648,8 +735,10 @@ nav {
 }
 .team-a {
   background-color: powderblue;
+  padding-bottom: 5rem;
 }
 .team-b {
+  padding-bottom: 5rem;
   background-color: seashell;
 }
 .team-a h1,
@@ -659,11 +748,11 @@ nav {
   padding: 1rem;
 }
 .team-cards {
-  min-height: 70vh;
+  height: fit-content;
   display: flex;
 
   padding-top: 1rem;
-  padding-bottom: 6rem;
+  /* padding-bottom: 6rem; */
   justify-content: center;
 }
 .team-title {
@@ -675,7 +764,9 @@ nav {
 }
 
 .person img {
-  width: 20rem;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
   border-radius: 30%;
   border: blanchedalmond thick solid;
 }
@@ -702,10 +793,6 @@ nav {
 .contactus h1 {
   text-align: center;
   padding-top: 5rem;
-}
-.contact-cont img {
-  height: 60%;
-  width: 50%;
 }
 
 .map-div {
@@ -807,16 +894,13 @@ iframe {
   backdrop-filter: blur(12vmax);
 }
 
-.home-first #vid-back {
-  width: 65%;
-
-  opacity: 1;
-  border-radius: 0.8rem;
-  position: absolute;
-  margin-left: 26rem;
-  margin-top: 1rem;
-
-  filter: blur(5rem);
-
-  z-index: -100 !important;
+/* events */
+.events-big h1 {
+  color: white;
+  text-align: center;
+  padding: 5rem;
+}
+.events-cont {
+  padding: 5rem;
+  padding-bottom: 10rem;
 }

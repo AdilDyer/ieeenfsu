@@ -73,3 +73,7 @@ app.get("/ourteam", (req, res) => {
 app.get("/connect", (req, res) => {
   res.render("connect.ejs");
 });
+
+app.get("/events", (req, res) => {
+  res.render("events.ejs");
+});

@@ -207,5 +207,40 @@
         });
       });
     </script>
+
+    <script>
+      document.addEventListener("mousemove", function (event) {
+        const blob = document.getElementById("blob");
+        const footer = document.getElementById("footer");
+        if (window.scrollY > 3900) {
+          blob.style.display = "none";
+        } else {
+          blob.style.display = "inline";
+        }
+        // function checkCollision() {
+        //   const rect2 = blob.getBoundingClientRect();
+        //   const rect1 = footer.getBoundingClientRect();
+
+        //   if (rect1.bottom === rect2.bottom) {
+        //     blob.style.display = "none !important";
+        //   } else {
+        //     blob.style.display = "inline";
+        //   }
+        // }
+
+        // // // Check for collision on every mousemove event
+        // document.addEventListener("mousemove", checkCollision);
+        var mouseX = event.pageX;
+        var mouseY = event.pageY;
+
+        blob.animate(
+          {
+            left: mouseX - 25 + "px",
+            top: mouseY - 25 + "px",
+          },
+          { duration: 3000, fill: "forwards" }
+        );
+      });
+    </script>
   </body>
 </html>
