@@ -1,4 +1,5 @@
 <%layout("/layouts/boilerplate.ejs")%>
+<div id="blob"></div>
 
 <div class="homebig" id="blur">
   <div class="home-first">
@@ -195,7 +196,11 @@
     </div>
   </div>
   <div class="stats-banner-big">
-    <h1 class="stats-banner-title pop-out">Some Facts Of IEEE@ChapterNFSU</h1>
+    <h1 style="text-align: center" class="pop-out stats-banner-title">
+      Some Facts Of IEEE
+      <span>@ChapterNFSU </span>
+    </h1>
+
     <div class="stats-banner row">
       <div class="banner-div col-md-4 pop-out">
         <img
@@ -267,23 +272,20 @@
       </div>
     </div>
     <br />
-    <a href="#home-fourth" style="text-decoration: none">
+    <a href="/about" style="text-decoration: none">
       <button
         class="nav-link home-join pop-out whynfsubtn"
         id="download"
         style="color: wheat"
       >
-        <b>See Why NFSU?</b>
+        <b>Learn More</b>
       </button>
     </a>
   </div>
   <div class="home-fourth" id="home-fourth">
-    <h1
-      style="text-align: center; text-shadow: 2px 2px dodgerblue"
-      class="pop-out"
-    >
+    <h1 style="text-align: center" class="pop-out">
       Why IEEE
-      <span style="text-shadow: 2px 2px lightcoral">@ChapterNFSU ?</span>
+      <span> @ChapterNFSU ?</span>
     </h1>
     <br />
     <br />
@@ -372,21 +374,6 @@
   </div>
 </div>
 <script>
-  function checkWidth() {
-    var newsCards = document.querySelectorAll(".home-second .card");
-    var screenWidth = window.innerWidth;
-    if (screenWidth < 769) {
-      // Adjust this threshold as needed
-      newsCards.forEach((element) => {
-        element.classList.add("pop-out-active");
-      });
-    } else {
-    }
-  }
-
-  // Initial check
-  checkWidth();
-
   //first p's moving text
   const text =
     "IEEE NFSU stands at the forefront of pioneering excellence, pushing the boundaries of forensic science research, education, and practice. It represents a beacon of knowledge and innovation in the field of forensic science.";
@@ -411,4 +398,3 @@
     typeText();
   });
 </script>
-

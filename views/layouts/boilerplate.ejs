@@ -34,7 +34,6 @@
 
   <body>
     <%-include("../includes/navbar.ejs")%> <%-include("../includes/flash.ejs")%>
-    <div id="blob"></div>
     <!-- //to display custom context menu -->
     <div
       id="custom-menu"
@@ -212,7 +211,7 @@
       document.addEventListener("mousemove", function (event) {
         const blob = document.getElementById("blob");
         const footer = document.getElementById("footer");
-        if (window.scrollY > 3900) {
+        if (window.scrollY > 3800) {
           blob.style.display = "none";
         } else {
           blob.style.display = "inline";

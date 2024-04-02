@@ -77,3 +77,11 @@ app.get("/connect", (req, res) => {
 app.get("/events", (req, res) => {
   res.render("events.ejs");
 });
+
+app.get("/about", (req, res) => {
+  res.render("about.ejs");
+});
+
+app.get("/faqs", (req, res) => {
+  res.render("faqs.ejs");
+});
