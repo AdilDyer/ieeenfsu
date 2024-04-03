@@ -132,18 +132,18 @@ nav {
   min-height: fit-content !important;
 }
 .home-first h1 span {
-  /* text-shadow: 2px 2px dodgerblue; */
+  text-shadow: 2px 2px dodgerblue;
 }
 #ieeename {
   font-size: 3.7rem;
 
-  /* text-shadow: 2px 2px dodgerblue; */
+  text-shadow: 2px 2px dodgerblue;
 }
 .home-first h1 {
   font-weight: 700;
   font-size: 3rem;
 
-  /* text-shadow: 2px 2px indianred; */
+  text-shadow: 2px 2px indianred;
 }
 .home-first p {
   text-align: center;
@@ -206,17 +206,18 @@ nav {
   transform: translateY(0);
 }
 .first-image {
+  height: 8rem !important;
   width: 20rem;
 
   object-fit: cover;
-
+  /* object-fit: cover; */
   /* position: relative; */
   /* right: 2rem; */
   margin-bottom: 3rem;
   border: #00539c thick;
   border-style: outset;
   box-shadow: inset 200px 200px 200px white;
-  border-radius: 3rem;
+  border-radius: 2.3rem;
 }
 .ieee-btn {
   background-color: #00539c;
@@ -408,7 +409,7 @@ nav {
 .home-fourth .card-body .card-text {
   text-align: center;
   color: bisque;
-  text-shadow: 2px 2px brown;
+  text-shadow: 2px 1px brown;
 
   font-weight: 500;
   width: 100%;
