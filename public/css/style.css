@@ -610,6 +610,7 @@ iframe {
 }
 .footer h1 {
   color: wheat;
+  font-size: 2.1rem;
   /* text-shadow: lightcoral 2px 1px; */
 }
 
@@ -623,7 +624,7 @@ iframe {
   background-color: rgba(16, 16, 20, 255);
   padding: 1rem;
   border-radius: 1rem;
-margin-top: 2rem;
+  margin-top: 1rem;
 
   display: flex;
   justify-content: center;
