@@ -623,6 +623,7 @@ iframe {
   background-color: rgba(16, 16, 20, 255);
   padding: 1rem;
   border-radius: 1rem;
+margin-top: 2rem;
 
   display: flex;
   justify-content: center;
@@ -939,8 +940,8 @@ iframe {
     margin-bottom: 4rem;
   }
   .banner-div {
-    margin: 0 ;
-    margin-bottom: 3rem ;
+    margin: 0;
+    margin-bottom: 3rem;
     /* margin-top: -4rem !important; */
   }
   .events-cont {
@@ -956,5 +957,13 @@ iframe {
   }
   .about-big {
     padding: 2rem;
+  }
+  .person .socials {
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+  .person .socials a {
+    font-size: 1.5rem;
+    margin: 0;
   }
 }
