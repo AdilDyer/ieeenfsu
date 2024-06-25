@@ -58,8 +58,8 @@ main()
 async function main() {
   await mongoose.connect(dbUrl);
 }
-app.listen(8080, () => {
-  console.log("server is listening to port 8080");
+app.listen(9090, () => {
+  console.log("server is listening to port 9090");
 });
 
 app.get("/", (req, res) => {

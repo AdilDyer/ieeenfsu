@@ -136,13 +136,12 @@ nav {
 }
 #ieeename {
   font-size: 3.7rem;
-
+  font-family: "Poppins", sans-serif;
   text-shadow: 2px 2px dodgerblue;
 }
 .home-first h1 {
   font-weight: 700;
   font-size: 3rem;
-
   text-shadow: 2px 2px indianred;
 }
 .home-first p {
@@ -153,7 +152,7 @@ nav {
   font-size: 1rem;
   color: antiquewhite;
   text-shadow: 1px 1px #000;
-  font-family: cursive;
+  font-family: "Lobster Two", "Poppins", sans-serif;
   letter-spacing: 0.1rem;
   font-weight: 500;
 
@@ -244,11 +243,17 @@ nav {
 }
 .cards {
   display: flex;
-
-  justify-content: space-evenly;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.cards::-webkit-scrollbar {
+  display: none;
 }
 .card {
   background-color: rgba(16, 16, 20, 255);
+  width: 40rem;
+  height: 20rem;
   border: 2px #00539c dashed !important;
   color: white;
   border-radius: 0.5rem;
@@ -282,15 +287,20 @@ nav {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+.home-second .cards {
+  .card {
+    min-width: 40rem;
+  }
+}
 .home-second .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   height: 100%;
 }
 
 .card:hover img {
-  transform: scale(1.1); /* Zoom in the image on hover */
+  transform: scale(1.05); /* Zoom in the image on hover */
 }
 .home-third {
   color: white;
@@ -323,11 +333,11 @@ nav {
 }
 /* stats banner */
 .stats-banner-big {
-  padding: 2rem;
-  margin: 2rem;
+  width: 100%;
 }
 .stats-banner {
   display: flex;
+  width: 100%;
   flex-wrap: nowrap !important;
   justify-content: center;
 }
@@ -678,9 +688,10 @@ iframe {
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
+  background: dodgerblue;
   background: linear-gradient(to right, #525ceb, blue);
   animation: rotate 10s infinite;
-  opacity: 0.8;
+  opacity: 0.6;
   /* filter: blur(0rem); */
   z-index: -100 !important;
 }
@@ -695,6 +706,7 @@ iframe {
   color: white;
   text-align: center;
   padding: 5rem;
+  padding: 2rem;
 }
 .events-cont {
   padding: 5rem;
@@ -728,6 +740,12 @@ iframe {
   color: black;
 }
 
+@media screen and (max-width: 1310px) {
+  #firstvideo {
+    width: 60% !important;
+    margin-top: 5rem;
+  }
+}
 @media screen and (max-width: 1100px) {
   #svgline {
     display: none;
@@ -765,11 +783,15 @@ iframe {
   }
 
   .home-first {
-    min-height: 160vh !important;
+    min-height: fit-content;
   }
 
   .home-first-content {
     min-height: 100% !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .for-mob-video {
     display: block !important;
@@ -803,12 +825,8 @@ iframe {
   .contact-cont .team-cards .person p {
     text-align: center;
   }
-}
-
-@media screen and (max-width: 1310px) {
-  #firstvideo {
-    width: 60% !important;
-    margin-top: 5rem;
+  .footer {
+    height: fit-content;
   }
 }
 
@@ -943,6 +961,7 @@ iframe {
   .banner-div {
     margin: 0;
     margin-bottom: 3rem;
+    border-radius: 0;
     /* margin-top: -4rem !important; */
   }
   .events-cont {
