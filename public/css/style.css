@@ -145,18 +145,13 @@ nav {
   text-shadow: 2px 2px indianred;
 }
 .home-first p {
-  text-align: center;
+  text-align: justify;
   width: 28%;
-  line-height: 2rem;
-  min-height: 10rem;
-  font-size: 1rem;
-  color: antiquewhite;
-  text-shadow: 1px 1px #000;
-  font-family: "Lobster Two", "Poppins", sans-serif;
+  line-height: 1.7rem;
+  min-height: 14rem;
+  color: rgba(178, 190, 255, 0.755);
   letter-spacing: 0.1rem;
-  font-weight: 500;
-
-  /* font-style: italic; */
+  font-weight: 200;
 }
 
 .home-first-content button {
@@ -710,7 +705,21 @@ iframe {
 }
 .events-cont {
   padding: 5rem;
+  /* background-color: rgb(220, 214, 255); */
   padding-bottom: 10rem;
+  flex-direction: column;
+  .card {
+    width: 100%;
+    .col-md-4 {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .card:hover {
+    background-color: #000000d3;
+  }
 }
 
 .about-big {
@@ -802,6 +811,7 @@ iframe {
     display: block !important;
     width: 100%;
     border-radius: 2rem;
+    border-radius: 1rem;
   }
   .home-second .card-body {
     display: flex;
@@ -878,11 +888,27 @@ iframe {
     text-align: center;
   }
 
+  .home-second .cards {
+    width: 100%;
+    .card {
+      min-width: 5rem;
+      height: fit-content;
+    }
+  }
   .home-second .card-title {
     font-size: 1.5rem !important;
   }
   .home-second .card-text {
     text-align: center;
+  }
+
+  .events-cont {
+    justify-content: center;
+    align-items: center;
+    .card {
+      width: 90%;
+      height: fit-content;
+    }
   }
   .for-mob-video {
     padding: 2rem;
@@ -925,7 +951,7 @@ iframe {
     min-height: 170vh !important;
   }
   .home-third {
-    margin-bottom: 7rem !important;
+    margin-bottom: 0rem;
   }
   .home-third p {
     font-size: 0.7rem !important;
