@@ -204,14 +204,14 @@ nav {
   width: 20rem;
 
   object-fit: cover;
-  /* object-fit: cover; */
-  /* position: relative; */
-  /* right: 2rem; */
   margin-bottom: 3rem;
-  border: #00539c thick;
-  border-style: outset;
+  /* border: #00539c thick; */
+  /* border-style: outset; */
+  /* border-radius: 2.3rem; */
+  border-radius: 1.7rem;
   box-shadow: inset 200px 200px 200px white;
-  border-radius: 2.3rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.686);
+
 }
 .ieee-btn {
   background-color: #00539c;
@@ -754,8 +754,19 @@ iframe {
     width: 60% !important;
     margin-top: 5rem;
   }
+  #blob {
+    display: none !important;
+  }
+  .home-second .cards {
+    .card {
+      width: 100%;
+    }
+  }
 }
 @media screen and (max-width: 1100px) {
+  #blob {
+    display: none !important;
+  }
   #svgline {
     display: none;
   }
@@ -801,6 +812,10 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+    p {
+      width: 100%;
+      text-align: center;
+    }
   }
   .for-mob-video {
     display: block !important;
@@ -825,6 +840,22 @@ iframe {
     font-size: 2rem;
     text-align: center;
     margin: 1rem;
+  }
+
+  .stats-banner {
+    .banner-div {
+      border-radius: 0rem;
+    }
+  }
+
+  .home-fourth {
+    .cards {
+      align-items: center;
+      justify-content: center;
+      .card {
+        margin: 0;
+      }
+    }
   }
   .contact-cont .team-cards {
     flex-wrap: wrap;
