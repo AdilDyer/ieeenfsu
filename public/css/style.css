@@ -28,10 +28,12 @@ background: linear-gradient(to right, #292E49, #536976);  */
 }
 
 nav {
-  background-color: rgba(16, 16, 20, 255);
+  background-color: rgb(16, 16, 20);
+  background-color: rgb(10, 10, 12);
   min-height: 4.5rem;
   z-index: 10;
-  box-shadow: inset 1rem 1rem 1rem black;
+  /* box-shadow: inset 1rem 1rem 1rem black; */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-brand {
@@ -211,7 +213,6 @@ nav {
   border-radius: 1.7rem;
   box-shadow: inset 200px 200px 200px white;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.686);
-
 }
 .ieee-btn {
   background-color: #00539c;
