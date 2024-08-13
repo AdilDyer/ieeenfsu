@@ -78,6 +78,16 @@ app.get("/events", (req, res) => {
   res.render("events.ejs");
 });
 
+app.get("/events/:id", (req, res) => {
+  if (req.params.id == "1") {
+    res.render("specificEvents/1.ejs");
+  } else if (req.params.id == 2) {
+    res.render("specificEvents/2.ejs");
+  } else if (req.params.id == 3) {
+    res.render("specificEvents/3.ejs");
+  }
+});
+
 app.get("/about", (req, res) => {
   res.render("about.ejs");
 });
