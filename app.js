@@ -87,6 +87,10 @@ app.get("/events/:id", (req, res) => {
     res.render("specificEvents/3.ejs");
   } else if (req.params.id == 4) {
     res.render("specificEvents/4.ejs");
+  } else if (req.params.id == 5) {
+    res.render("specificEvents/5.ejs");
+  } else if (req.params.id == 6) {
+    res.render("specificEvents/6.ejs");
   }
 });
 
